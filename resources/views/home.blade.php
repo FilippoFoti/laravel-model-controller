@@ -4,10 +4,10 @@
     <div class="container">
         <div class="row row-cols-5">
             @foreach ($movies as $movie)
-                <div class="col">
+                <div class="col mb-4">
                     <div class="card">
                         <img src="{{ $movie->image }}" class="card-img-top" alt="Locandina">
-                        <div class="card-body">
+                        <div class="card-body d-flex align-items-start flex-column justify-content-center">
                             <h5 class="card-title">{{ $movie->title }}</h5>
                             <p class="card-text">{{ $movie->original_title }}</p>
                         </div>
